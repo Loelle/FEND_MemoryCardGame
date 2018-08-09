@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Matching Game</h1>
+        </header>
+
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star" id="firstStar"></i></li>
+        		<li><i class="fa fa-star" id="secondStar"></i></li>
+        		<li><i class="fa fa-star" id="thirdStar"></i></li>
+        	</ul>
+
+        	<span class="moves">0</span><span class="movesText"> Move</span>
+
+            <div class="timer">
+                <span>Timer</span>
+                <span class="minutes"></span><span class="seconds"></span>
+            </div>
+
+            <div class="restart">
+                <span>Restart:</span>
+        		<i class="fa fa-repeat"></i>
+        	</div>
+        </section>
+
+        <ul class="deck">
+        </ul>
+
+        <div class="winPopUp">
+            <p class="firstPopUpLine">Congratulations! You Won!</p>
+            <p>It takes you
+                <span class="minutes">0</span>
+                <span class="seconds">0</span>
+                min to win.</p>
+            <p>You have
+                <span class="finalStars">0</span> stars.</p>
+            <button class="restartGame" onclick="restartGame()">Play again</button>
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
