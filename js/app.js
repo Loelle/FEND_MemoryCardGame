@@ -119,10 +119,10 @@ $(".card").on("click", function() {
 
 // Remove classes of card in case of a wrong match
 function removeClasses() {
-	$(".card").removeClass("show open flipInY bounceIn shake wrong");
+	$(".card").removeClass("show open flipInY bounceIn wrong");
 	openCard = [];
 	// Enable click on card after wrong match display
-	$(".deck").css("pointer-events", "aut0o");
+	$(".deck").css("pointer-events", "auto");
 }
 
 // Update number of moves and stars
